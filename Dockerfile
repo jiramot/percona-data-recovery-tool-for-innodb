@@ -9,4 +9,7 @@ RUN apt-get -q -y install mysql-server
 ADD ./percona.sh /percona.sh
 RUN /percona.sh
 
+ADD ./alias.sh /alias.sh
+RUN /alias.sh
+
 EXPOSE 3306
