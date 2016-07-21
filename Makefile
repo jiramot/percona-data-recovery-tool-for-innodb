@@ -9,6 +9,6 @@ shell: build
 	docker run --rm --name percona -it $(NAME) /bin/bash
 
 push:
-	docker push jiramot/percona-data-recovery-tool-for-innodb:0.5
+	docker push $(NAME)
 
 default: build
